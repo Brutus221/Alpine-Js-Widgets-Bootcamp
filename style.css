@@ -4,24 +4,29 @@
     background-color: black;
     margin-bottom: 1em;
 }
-.cont{
-    padding: 0.5em;
-    margin: 0.1em;
+h1{
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 0.1em;
+}
+.pressed{
     font-style: normal;
     color: green;
+    padding: 0.5em;
+    margin: 0.1em;
 }
-.input > label{
+.insert > label{
     display: inline-block;
     width: 15em;
     padding: 0.5em;
     font-weight: bold;
 }
-.input > input[type="text"]{
+.insert > .insert[type="text"]{
     padding: 0.5em;
     margin: 0.5em;
 
 }
-.input{
+.insert{
     color: white;
 }
 .widget{
@@ -32,11 +37,7 @@
     border-radius: 0.5em;
     text-align: center;
 }
-h1{
-    text-align: center;
-    color: whitesmoke;
-    border-radius: 0.1em;
-}
+
 body{
     background-image: url('vhoa0.jpg');
 }

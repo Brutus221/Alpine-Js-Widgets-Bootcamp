@@ -9,14 +9,15 @@
     <script src="greet.js"></script>
     <script src="greet-widget.js" defer></script>
 
-    <script src="enough_airtime.js"></script>
-    <script src="enough-airtime-widget.js"></script>
 
     <script src="transport_fee.js"></script>
     <script src="transport-fee-widget.js"></script>
 
     <script src="total_phone_bills.js"></script>
     <script src="total-phone-widget.js"></script>
+
+    <script src="enough_airtime.js"></script>
+    <script src="enough-airtime-widget.js"></script>
 
     <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="style.css">
@@ -30,11 +31,11 @@
             <div x-show="message.length > 0" class="message" x-text="message">
                 You will be greeted here.....
             </div>
-            <div class="input">
+            <div class="insert">
                 <label for="name">Enter your name: </label>
-                <input type="text" placeholder="Brutus"  x-model="name" id="name">
+                <input type="text" placeholder="e.g Brutus Mudau"  x-model="name" id="name">
             </div>
-            <div class="cont"><button x-on:click="greetMe">Greet!</button></div>
+            <div class="pressed"><button x-on:click="greetMe">Greet!</button></div>
             
         </div>
         
@@ -45,15 +46,15 @@
                 Airtime message will be displayed here...
             </div>
     
-            <div class="input">
+            <div class="insert">
                 <label for="usage">Enter Airtime: </label>
-                <input type="text" placeholder="call,sms"  x-model="item" id="usage"> 
+                <input type="text" placeholder="e.g call,sms"  x-model="item" id="usage"> 
             </div>
-            <div class="input">
+            <div class="insert">
                 <label for="amount">Amount </label>
-                <input type="text" placeholder="20" x-model="airtime" id="amount"> 
+                <input type="text" placeholder="e.g 20" x-model="airtime" id="amount"> 
             </div>
-            <div class="cont">
+            <div class="pressed">
                 <button x-on:click="Calculate">Check Airtime Usage</button>
             </div>
         </div>
@@ -61,24 +62,24 @@
         <div class="widget" x-data="transportwidget">
             <h3 style="background-color: whitesmoke; color: blue; size: 35em;text-align: center;">Transport Fee</h3>
             <div x-show="shiftMessage.length > 0" class="message" x-text="shiftMessage">
-                shift price will be displayed here....
+                you will find shift price displayed here
             </div>
-            <div class="input"><label for="shift">Enter shift</label>
-                <input type="text" placeholder="morning/afternoon/night"  x-model="shift" id="shift">
+            <div class="insert"><label for="shift">Enter shift</label>
+                <input type="text" placeholder="e.g morning/afternoon/night"  x-model="shift" id="shift">
             </div>
-            <div class="cont"><button x-on:click="shiftprice">Check Price</button></div>
+            <div class="pressed"><button x-on:click="shiftprice">Check Price</button></div>
         </div>
 
         <div class="widget" x-data="totalphonewidget">
             <h3 style="background-color: whitesmoke; color: blue; size: 35em;" >Total phone bills</h3>
             <div x-show="billMessage.length > 0" class="message" x-text="billMessage">
-                Your bill message will be displayed here....
+                you will find shift price displayed here
             </div>
-            <div class="input">
-                <label for="bill">Enter a string: call,sms or just one </label>
-                <input type="text" placeholder="call,sms" x-model="bill" id="bill">
+            <div class="insert">
+                <label for="bill"> enter Your phone bill request </label>
+                <input type="text" placeholder=" e.g call,sms" x-model="bill" id="bill">
             </div>
-            <div class="cont"><button x-on:click="phoneBill">Check Bill</button></div>
+            <div class="pressed"><button x-on:click="phoneBill">Check Bill</button></div>
             
         </div>
 
