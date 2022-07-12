@@ -39,6 +39,7 @@ h1{
 }
 
 body{
+    background-size: cover;
     background-image: url('vhoa0.jpg');
 }
 @media(min-width:1050px){
